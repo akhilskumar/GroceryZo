@@ -1,0 +1,17 @@
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\bin\Debug\net5.0\GroceryBLL.deps.json
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\bin\Debug\net5.0\GroceryBLL.dll
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\bin\Debug\net5.0\GroceryBLL.pdb
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\bin\Debug\net5.0\GroceryBOL.dll
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\bin\Debug\net5.0\GroceryDAL.dll
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\bin\Debug\net5.0\GroceryBOL.pdb
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\bin\Debug\net5.0\GroceryDAL.pdb
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\obj\Debug\net5.0\GroceryBLL.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\obj\Debug\net5.0\GroceryBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\obj\Debug\net5.0\GroceryBLL.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\obj\Debug\net5.0\GroceryBLL.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\obj\Debug\net5.0\GroceryBLL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\obj\Debug\net5.0\GroceryBLL.csproj.CopyComplete
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\obj\Debug\net5.0\GroceryBLL.dll
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\obj\Debug\net5.0\refint\GroceryBLL.dll
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\obj\Debug\net5.0\GroceryBLL.pdb
+C:\Users\Admin\source\repos\Grocery\GroceryBLL\obj\Debug\net5.0\ref\GroceryBLL.dll
