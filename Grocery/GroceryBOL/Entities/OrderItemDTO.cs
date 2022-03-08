@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace GroceryBOL.Entities
 {
-    public  class OrderItem
+    public  class OrderItemDTO
     {
         public int Id { get; set; }
         public int? OrderId { get; set; }
@@ -13,7 +13,7 @@ namespace GroceryBOL.Entities
         public int? Quantity { get; set; }
         public decimal? Total { get; set; }
 
-        public  Order Order { get; set; }
-        public  Product Product { get; set; }
+        public  OrderDTO Order { get; set; }
+        public  ProductDTO Product { get; set; }
     }
 }

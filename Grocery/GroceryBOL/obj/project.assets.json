@@ -327,19 +327,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Aneesh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Grocery\\GroceryBOL\\GroceryBOL.csproj",
+      "projectUniqueName": "C:\\Users\\Aneesh\\source\\repos\\GroceryZo\\Grocery\\GroceryBOL\\GroceryBOL.csproj",
       "projectName": "GroceryBOL",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\Grocery\\GroceryBOL\\GroceryBOL.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\Grocery\\GroceryBOL\\obj\\",
+      "projectPath": "C:\\Users\\Aneesh\\source\\repos\\GroceryZo\\Grocery\\GroceryBOL\\GroceryBOL.csproj",
+      "packagesPath": "C:\\Users\\Aneesh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aneesh\\source\\repos\\GroceryZo\\Grocery\\GroceryBOL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aneesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -385,7 +385,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

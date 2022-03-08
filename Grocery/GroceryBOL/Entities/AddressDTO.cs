@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace GroceryBOL.Entities
 {
-    public  class Address
+    public  class AddressDTO
     {
         public int Id { get; set; }
         public int? CustomerId { get; set; }
@@ -13,7 +13,7 @@ namespace GroceryBOL.Entities
         public string Landmark { get; set; }
         public int? Pincodeid { get; set; }
 
-        public  Customer Customer { get; set; }
-        public  Pincode Pincode { get; set; }
+        public  CustomerDTO Customer { get; set; }
+        public  PincodeDTO Pincode { get; set; }
     }
 }

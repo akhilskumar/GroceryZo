@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace GroceryBOL.Entities
 {
-    public  class Order
+    public  class OrderDTO
     {
         public int Id { get; set; }
         public int? CustomerId { get; set; }
@@ -14,7 +14,7 @@ namespace GroceryBOL.Entities
         public DateTime? OrderDate { get; set; }
         public byte? Status { get; set; }
 
-        public  Customer Customer { get; set; }
-        public  List<OrderItem> OrderItems { get; set; }
+        public  CustomerDTO Customer { get; set; }
+        public  List<OrderItemDTO> OrderItems { get; set; }
     }
 }

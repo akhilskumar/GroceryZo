@@ -5,13 +5,13 @@ using System.Collections.Generic;
 
 namespace GroceryBOL.Entities
 {
-    public  class Unit
+    public  class UnitDTO
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public bool? IsBase { get; set; }
         public bool? Flag { get; set; }
         public int? UnitId { get; set; }
-        public  List<Product> Products { get; set; }
+        public  List<ProductDTO> Products { get; set; }
     }
 }

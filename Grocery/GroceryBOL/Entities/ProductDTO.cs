@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace GroceryBOL.Entities
 {
-    public  class Product
+    public  class ProductDTO
     {
 
         public int Id { get; set; }
@@ -18,8 +18,8 @@ namespace GroceryBOL.Entities
         public string Image { get; set; }
         public int? UnitIncrement { get; set; }
 
-        public  ProductCategory IdNavigation { get; set; }
-        public  Unit Unit { get; set; }
-        public  List<OrderItem> OrderItems { get; set; }
+        public  ProductCategoryDTO IdNavigation { get; set; }
+        public  UnitDTO Unit { get; set; }
+        public  List<OrderItemDTO> OrderItems { get; set; }
     }
 }

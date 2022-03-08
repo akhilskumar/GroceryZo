@@ -1,6 +1,11 @@
+using GroceryBLL.Interface;
+using GroceryBLL.Repository;
 using GroceryDAL.DbContexts;
+using GroceryDAL.Interface;
+using GroceryDAL.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -28,15 +33,25 @@ namespace Grocery
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            #region BLL Injections
+            services.AddScoped<IPincodeBLL, PincodeBLL>();
+            #endregion
+            #region DAL Injections
+            services.AddScoped<IPincodeDAL, PincodeDAL>();
+            #endregion
+
 
             services.AddControllers();
 
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Grocery", Version = "v1" });
+                //c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
             });
             services.AddDbContext<GroceryZoContext>(options=>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,9 +59,9 @@ namespace Grocery
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Grocery v1"));
+                //app.UseDeveloperExceptionPage();
+                //app.UseSwagger();
+                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Grocery v1"));
             }
 
             app.UseHttpsRedirection();
@@ -57,10 +72,12 @@ namespace Grocery
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllerRoute(
+                  name: "default",
+                  pattern: "{controller=Pincode}/{action=GetALl}/{id?}");
             });
 
-            loggerFactory.AddLog4Net();
+            //loggerFactory.AddLog4Net();
         }
     }
 }

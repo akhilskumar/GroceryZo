@@ -9,14 +9,12 @@ namespace GroceryDAL.DbContexts
 {
     public partial class GroceryZoContext : DbContext
     {
-        public GroceryZoContext()
-        {
-        }
-
+      
         public GroceryZoContext(DbContextOptions<GroceryZoContext> options)
             : base(options)
         {
         }
+
 
         public virtual DbSet<Address> Addresses { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
