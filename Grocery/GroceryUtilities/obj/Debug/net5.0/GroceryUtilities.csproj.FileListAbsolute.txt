@@ -2,7 +2,6 @@ C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryUtilities\bin\Debug\net5.0
 C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryUtilities\bin\Debug\net5.0\GroceryUtilities.dll
 C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryUtilities\bin\Debug\net5.0\ref\GroceryUtilities.dll
 C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryUtilities\bin\Debug\net5.0\GroceryUtilities.pdb
-C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryUtilities\obj\Debug\net5.0\GroceryUtilities.csproj.AssemblyReference.cache
 C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryUtilities\obj\Debug\net5.0\GroceryUtilities.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryUtilities\obj\Debug\net5.0\GroceryUtilities.AssemblyInfoInputs.cache
 C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryUtilities\obj\Debug\net5.0\GroceryUtilities.AssemblyInfo.cs

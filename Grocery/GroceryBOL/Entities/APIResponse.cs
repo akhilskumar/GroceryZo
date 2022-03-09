@@ -13,13 +13,7 @@ namespace GroceryBOL.Entities
         public string Status { get; set; }
         public int StatusCode { get; set; }
         public string Message { get; set; }
-        public int UserRole { get; set; }
-        public decimal GrandTotal { get; set; }
-
-        public Guid? vreceipt { get; set; }
-        public List<PincodeDTO> Pincodes { get; set; }
-        public bool IsSuccess { get; set; }
-
-        public PincodeDTO pincodeDTO;
+     
+        public dynamic data { get; set; }
     }
     }

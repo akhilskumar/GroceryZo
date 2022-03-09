@@ -25,6 +25,7 @@ namespace GroceryDAL.Repository
             {
             Pincode pincode = new Pincode();
             CopyFrom(pincodeDTO, pincode);
+            _context.Pincodes.Add(pincode);
             Save();
             CopyTo(pincodeDTO, pincode);
             return pincodeDTO;

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace Grocery.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[Action]")]
     [ApiController]
     public class PincodeController : BaseApiController
     {
@@ -28,9 +28,9 @@ namespace Grocery.Controllers
             }
             catch(Exception exception)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, new APIResponce { Status = "Error", Message = exception.Message, Pincodes = pincodeDtoList, StatusCode = StatusCodes.Status400BadRequest });
+                return StatusCode(StatusCodes.Status400BadRequest, new APIResponce { Status = "Error", Message = exception.Message, data = pincodeDtoList, StatusCode = StatusCodes.Status400BadRequest });
             }
-            return Ok(new APIResponce { Status = "Success", Message = "Data Fetched Successfully", Pincodes = pincodeDtoList, StatusCode = StatusCodes.Status200OK });
+            return Ok(new APIResponce { Status = "Success", Message = "Data Fetched Successfully", data = pincodeDtoList, StatusCode = StatusCodes.Status200OK });
         }
 
         [HttpGet]
@@ -43,9 +43,9 @@ namespace Grocery.Controllers
             }
             catch(Exception exception)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, new APIResponce { Status = "Error", Message = exception.Message, pincodeDTO = pincodeDTO, StatusCode = StatusCodes.Status400BadRequest });
+                return StatusCode(StatusCodes.Status400BadRequest, new APIResponce { Status = "Error", Message = exception.Message, data = pincodeDTO, StatusCode = StatusCodes.Status400BadRequest });
             }
-            return Ok(new APIResponce { Status = "Success", Message = "Data Fetched Successfully", pincodeDTO = pincodeDTO, StatusCode = StatusCodes.Status200OK });
+            return Ok(new APIResponce { Status = "Success", Message = "Data Fetched Successfully", data = pincodeDTO, StatusCode = StatusCodes.Status200OK });
         }
 
         [HttpPost]
@@ -58,9 +58,9 @@ namespace Grocery.Controllers
             }
             catch (Exception exception)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, new APIResponce { Status = "Error", Message = exception.Message, pincodeDTO = pincodeDTO, StatusCode = StatusCodes.Status400BadRequest });
+                return StatusCode(StatusCodes.Status400BadRequest, new APIResponce { Status = "Error", Message = exception.Message, data = pincodeDTO, StatusCode = StatusCodes.Status400BadRequest });
             }
-            return Ok(new APIResponce { Status = "Success", Message = "Data Fetched Successfully", pincodeDTO = pincodeDTO, StatusCode = StatusCodes.Status200OK });
+            return Ok(new APIResponce { Status = "Success", Message = "Data Fetched Successfully", data = pincodeDTO, StatusCode = StatusCodes.Status200OK });
         }
         [HttpDelete]
         public IActionResult DeleteById(int Id)
@@ -72,9 +72,9 @@ namespace Grocery.Controllers
             }
             catch (Exception exception)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, new APIResponce { Status = "Error", Message = exception.Message, IsSuccess = IsSuccess, StatusCode = StatusCodes.Status400BadRequest });
+                return StatusCode(StatusCodes.Status400BadRequest, new APIResponce { Status = "Error", Message = exception.Message, data = IsSuccess, StatusCode = StatusCodes.Status400BadRequest });
             }
-            return Ok(new APIResponce { Status = "Success", Message = "Data Fetched Successfully", IsSuccess = IsSuccess, StatusCode = StatusCodes.Status200OK });
+            return Ok(new APIResponce { Status = "Success", Message = "Data Fetched Successfully", data = IsSuccess, StatusCode = StatusCodes.Status200OK });
         }
         [HttpPost]
         public IActionResult SavePincode(PincodeDTO pincodeDTO)
@@ -86,9 +86,9 @@ namespace Grocery.Controllers
             }
             catch (Exception exception)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, new APIResponce { Status = "Error", Message = exception.Message, pincodeDTO = pincode, StatusCode = StatusCodes.Status400BadRequest });
+                return StatusCode(StatusCodes.Status400BadRequest, new APIResponce { Status = "Error", Message = exception.Message, data = pincode, StatusCode = StatusCodes.Status400BadRequest });
             }
-            return Ok(new APIResponce { Status = "Success", Message = "Data Fetched Successfully", pincodeDTO = pincode, StatusCode = StatusCodes.Status200OK });
+            return Ok(new APIResponce { Status = "Success", Message = "Data Inserted Successfully", data = pincode, StatusCode = StatusCodes.Status200OK });
         }
 
     }

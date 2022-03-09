@@ -1,0 +1,12 @@
+C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryBOL\bin\Release\net5.0\GroceryBOL.deps.json
+C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryBOL\bin\Release\net5.0\GroceryBOL.dll
+C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryBOL\bin\Release\net5.0\ref\GroceryBOL.dll
+C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryBOL\bin\Release\net5.0\GroceryBOL.pdb
+C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryBOL\obj\Release\net5.0\GroceryBOL.csproj.AssemblyReference.cache
+C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryBOL\obj\Release\net5.0\GroceryBOL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryBOL\obj\Release\net5.0\GroceryBOL.AssemblyInfoInputs.cache
+C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryBOL\obj\Release\net5.0\GroceryBOL.AssemblyInfo.cs
+C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryBOL\obj\Release\net5.0\GroceryBOL.csproj.CoreCompileInputs.cache
+C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryBOL\obj\Release\net5.0\GroceryBOL.dll
+C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryBOL\obj\Release\net5.0\ref\GroceryBOL.dll
+C:\Users\Aneesh\source\repos\GroceryZo\Grocery\GroceryBOL\obj\Release\net5.0\GroceryBOL.pdb
