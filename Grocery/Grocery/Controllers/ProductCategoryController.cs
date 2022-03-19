@@ -33,6 +33,20 @@ namespace Grocery.Controllers
             }
             return Ok(new APIResponce { Status = "Success", Message = "Data Fetched Successfully", data = productCategoryDTO, StatusCode = StatusCodes.Status200OK });
         }
+        [HttpPost]
+        public IActionResult SaveProductCategory(ProductCategoryDTO productCategoryDTO)
+        {
+            ProductCategoryDTO pincode = new();
+            try
+            {
+                pincode = _productCategoryBLL.Add(productCategoryDTO);
+            }
+            catch (Exception exception)
+            {
+                return StatusCode(StatusCodes.Status400BadRequest, new APIResponce { Status = "Error", Message = exception.Message, data = pincode, StatusCode = StatusCodes.Status400BadRequest });
+            }
+            return Ok(new APIResponce { Status = "Success", Message = "Data Inserted Successfully", data = pincode, StatusCode = StatusCodes.Status200OK });
+        }
 
 
     }

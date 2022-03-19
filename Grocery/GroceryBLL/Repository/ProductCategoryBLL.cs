@@ -29,5 +29,56 @@ namespace GroceryBLL
                 throw;
             }
         }
+
+        public ProductCategoryDTO Add(ProductCategoryDTO ModelDTO)
+        {
+            try
+            {
+                return _productCategoryDAL.Add(ModelDTO);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        public bool Delete(int Id)
+        {
+            try
+            {
+                return (_productCategoryDAL.Delete(Id));
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        public List<ProductCategoryDTO> GetAll()
+        {
+
+            try
+            {
+                return _productCategoryDAL.GetAll();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+
+        public ProductCategoryDTO Update(ProductCategoryDTO pincodeDTO)
+        {
+
+            try
+            {
+                return _productCategoryDAL.Update(pincodeDTO);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
     }
 }
