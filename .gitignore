@@ -3,3 +3,14 @@
 ################################################################################
 
 /.vs
+/Grocery/Grocery/bin
+/Grocery/Grocery/obj
+/Grocery/GroceryBLL/obj
+/Grocery/GroceryBOL/obj
+/Grocery/GroceryDAL/obj
+/Grocery/GroceryUtilities/obj
+/Grocery/.vs/Grocery
+/Grocery/GroceryBLL/bin
+/Grocery/GroceryBOL/bin
+/Grocery/GroceryDAL/bin
+/Grocery/GroceryUtilities/bin
