@@ -14,3 +14,5 @@
 /Grocery/GroceryBOL/bin
 /Grocery/GroceryDAL/bin
 /Grocery/GroceryUtilities/bin
+/Grocery/Grocery/Properties/PublishProfiles
+/Grocery/Grocery/.config/dotnet-tools.json
