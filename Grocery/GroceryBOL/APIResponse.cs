@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GroceryBOL.Entities
+namespace GroceryBOL
 {
     public class APIResponce
     {

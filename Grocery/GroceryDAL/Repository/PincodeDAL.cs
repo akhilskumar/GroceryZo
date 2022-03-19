@@ -1,14 +1,9 @@
-﻿using GroceryBOL.Entities;
-using GroceryDAL.DbContexts;
-using GroceryDAL.Interface;
-using GroceryDAL.Models;
+﻿using GroceryBOL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace GroceryDAL.Repository
+namespace GroceryDAL
 {
     public class PincodeDAL:IPincodeDAL
     {

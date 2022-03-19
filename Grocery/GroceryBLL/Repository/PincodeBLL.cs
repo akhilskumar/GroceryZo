@@ -1,13 +1,13 @@
-﻿using GroceryBLL.Interface;
-using GroceryBOL.Entities;
-using GroceryDAL.Interface;
+﻿using GroceryBLL;
+using GroceryBOL;
+using GroceryDAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GroceryBLL.Repository
+namespace GroceryBLL
 {
     public class PincodeBLL : IPincodeBLL
     {

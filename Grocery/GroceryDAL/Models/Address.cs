@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace GroceryDAL.Models
+namespace GroceryDAL
 {
     public partial class Address
     {

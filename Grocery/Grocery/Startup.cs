@@ -1,23 +1,15 @@
-using GroceryBLL.Interface;
-using GroceryBLL.Repository;
-using GroceryDAL.DbContexts;
-using GroceryDAL.Interface;
-using GroceryDAL.Repository;
+using GroceryBLL;
+using GroceryDAL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Grocery
 {
@@ -35,9 +27,11 @@ namespace Grocery
         {
             #region BLL Injections
             services.AddScoped<IPincodeBLL, PincodeBLL>();
+            services.AddScoped<IProductCategoryBLL, ProductCategoryBLL>();
             #endregion
             #region DAL Injections
             services.AddScoped<IPincodeDAL, PincodeDAL>();
+            services.AddScoped<IProductCategoryDAL, ProductCategoryDAL>();
             #endregion
 
 
