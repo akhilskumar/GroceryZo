@@ -1,4 +1,4 @@
-﻿using GroceryBOL;
+using GroceryBOL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -137,7 +137,7 @@ namespace GroceryDAL
                 destination.UnitPrice = source.UnitPrice;
                 destination.UnitId = source.UnitId;
                 destination.UnitIncrement = source.UnitIncrement;
-               
+
             }
             return destination;
 
