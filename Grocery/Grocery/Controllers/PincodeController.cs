@@ -1,5 +1,5 @@
-﻿using GroceryBLL.Interface;
-using GroceryBOL.Entities;
+﻿using GroceryBLL;
+using GroceryBOL;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;

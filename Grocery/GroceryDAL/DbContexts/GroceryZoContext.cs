@@ -1,11 +1,10 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using GroceryDAL.Models;
 
 #nullable disable
 
-namespace GroceryDAL.DbContexts
+namespace GroceryDAL
 {
     public partial class GroceryZoContext : DbContext
     {

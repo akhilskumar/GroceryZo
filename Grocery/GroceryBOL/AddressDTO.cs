@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace GroceryDAL
+namespace GroceryBOL
 {
-    public partial class Address
+    public  class AddressDTO
     {
         public int Id { get; set; }
         public int? CustomerId { get; set; }
@@ -13,7 +13,7 @@ namespace GroceryDAL
         public string Landmark { get; set; }
         public int? Pincodeid { get; set; }
 
-        public virtual Customer Customer { get; set; }
-        public virtual Pincode Pincode { get; set; }
+        public  CustomerDTO Customer { get; set; }
+        public  PincodeDTO Pincode { get; set; }
     }
 }

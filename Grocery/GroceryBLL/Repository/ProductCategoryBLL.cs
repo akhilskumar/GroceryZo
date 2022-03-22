@@ -9,19 +9,32 @@ using System.Threading.Tasks;
 
 namespace GroceryBLL
 {
-    public class PincodeBLL : IPincodeBLL
+    public class ProductCategoryBLL : IProductCategoryBLL
     {
-        private IPincodeDAL _pincodeDAL;    
+        private IProductCategoryDAL _productCategoryDAL;    
 
-        public PincodeBLL(IPincodeDAL pincodeDAL )
+        public ProductCategoryBLL(IProductCategoryDAL productCategoryDAL)
         {
-            _pincodeDAL = pincodeDAL;
+            _productCategoryDAL = productCategoryDAL;
         }
-        public PincodeDTO Add(PincodeDTO pincodeDTO)
+
+        public ProductCategoryDTO GetById(int Id)
         {
             try
             {
-                return _pincodeDAL.Add(pincodeDTO);
+                return _productCategoryDAL.GetById(Id);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        public ProductCategoryDTO Add(ProductCategoryDTO ModelDTO)
+        {
+            try
+            {
+                return _productCategoryDAL.Add(ModelDTO);
             }
             catch (Exception ex)
             {
@@ -33,7 +46,7 @@ namespace GroceryBLL
         {
             try
             {
-            return (_pincodeDAL.Delete(Id));
+                return (_productCategoryDAL.Delete(Id));
             }
             catch (Exception ex)
             {
@@ -41,12 +54,12 @@ namespace GroceryBLL
             }
         }
 
-        public List<PincodeDTO> GetAll()
+        public List<ProductCategoryDTO> GetAll()
         {
 
             try
             {
-                return _pincodeDAL.GetAll();
+                return _productCategoryDAL.GetAll();
             }
             catch (Exception ex)
             {
@@ -54,25 +67,13 @@ namespace GroceryBLL
             }
         }
 
-        public PincodeDTO GetById(int Id)
+
+        public ProductCategoryDTO Update(ProductCategoryDTO pincodeDTO)
         {
 
             try
             {
-                return _pincodeDAL.GetById(Id);
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-        }
-
-        public PincodeDTO Update(PincodeDTO pincodeDTO)
-        {
-
-            try
-            {
-              return   _pincodeDAL.Update(pincodeDTO);
+                return _productCategoryDAL.Update(pincodeDTO);
             }
             catch (Exception ex)
             {

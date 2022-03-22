@@ -3,14 +3,10 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace GroceryDAL
+namespace GroceryBOL
 {
-    public partial class Product
+    public  class ProductDTO
     {
-        public Product()
-        {
-            OrderItems = new HashSet<OrderItem>();
-        }
 
         public int Id { get; set; }
         public int? CategoryId { get; set; }
@@ -22,8 +18,8 @@ namespace GroceryDAL
         public string Image { get; set; }
         public int? UnitIncrement { get; set; }
 
-        public virtual ProductCategory IdNavigation { get; set; }
-        public virtual Unit Unit { get; set; }
-        public virtual ICollection<OrderItem> OrderItems { get; set; }
+        public  ProductCategoryDTO IdNavigation { get; set; }
+        public  UnitDTO Unit { get; set; }
+        public  List<OrderItemDTO> OrderItems { get; set; }
     }
 }

@@ -1,11 +1,11 @@
-﻿using GroceryBOL.Entities;
+﻿using GroceryBOL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GroceryDAL.Interface
+namespace GroceryDAL
 {
     public interface IPincodeDAL
     {

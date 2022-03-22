@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace GroceryDAL
+namespace GroceryBOL
 {
-    public partial class OrderItem
+    public  class OrderItemDTO
     {
         public int Id { get; set; }
         public int? OrderId { get; set; }
@@ -13,7 +13,7 @@ namespace GroceryDAL
         public int? Quantity { get; set; }
         public decimal? Total { get; set; }
 
-        public virtual Order Order { get; set; }
-        public virtual Product Product { get; set; }
+        public  OrderDTO Order { get; set; }
+        public  ProductDTO Product { get; set; }
     }
 }

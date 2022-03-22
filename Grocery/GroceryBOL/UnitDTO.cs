@@ -3,21 +3,15 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace GroceryDAL
+namespace GroceryBOL
 {
-    public partial class Unit
+    public  class UnitDTO
     {
-        public Unit()
-        {
-            Products = new HashSet<Product>();
-        }
-
         public int Id { get; set; }
         public string Name { get; set; }
         public bool? IsBase { get; set; }
         public bool? Flag { get; set; }
         public int? UnitId { get; set; }
-
-        public virtual ICollection<Product> Products { get; set; }
+        public  List<ProductDTO> Products { get; set; }
     }
 }

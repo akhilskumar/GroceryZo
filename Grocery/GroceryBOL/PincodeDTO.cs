@@ -3,14 +3,10 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace GroceryDAL
+namespace GroceryBOL
 {
-    public partial class Pincode
+    public  class PincodeDTO
     {
-        public Pincode()
-        {
-            Addresses = new HashSet<Address>();
-        }
 
         public int Id { get; set; }
         public string Pincode1 { get; set; }
@@ -18,6 +14,6 @@ namespace GroceryDAL
         public string Location { get; set; }
         public bool? Flag { get; set; }
 
-        public virtual ICollection<Address> Addresses { get; set; }
+        public  List<AddressDTO> Addresses { get; set; }
     }
 }
